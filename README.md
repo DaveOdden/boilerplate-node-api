@@ -14,12 +14,19 @@ Prerequisites:
 
 1. In the command line, `cd` to the location you want your project to live.
 2. execute `git clone https://github.com/DaveOdden/boilerplateNodeAPI` to pull this package down.
+3. feel free to change the name of this directory to whatever you'd like.
 
 #
 
 **Usage**
 
-1. `cd` into "boilerplateNodeAPI"
+1. `cd` into "boilerplateNodeAPI" - or whatever you named it.
+2. run `npm install` to get the project bootstrapped.
+3. execute 'npm run start` to start the server. This command is stored in your package.json file.
+	* If you want/need to change the port, run `npm run start --port 1337`.
+4. visit `localhost:3000` in your browser.
+
+	_* use `ctrl+C` to shutdown the server instance_
 
 ____
 
@@ -33,3 +40,13 @@ ____
 6. create `server.js` file with `touch server.js`.
 7. create the api folder with `mkdir api`.
 8. create model, route, and controller files under `./api/` with `touch api/controllers/apiController.js api/models/apiModel.js api/routes/apiRoutes.js`.
+9. inside `server.js`, add the following
+```var express = require('express');
+var app = express();
+var port = process.env.PORT || 3000;
+
+app.listen(port);
+
+console.log( 'server started on port ' + port );
+```
+10. add `"start": "nodemon server.js"` to the package.json's scripts object.
