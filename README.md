@@ -8,6 +8,17 @@ Prerequisites:
 1. node installed
 2. access to terminal
 
+**Installation**
+
+1. In the command line, `cd` to the location you want your project to live.
+2. execute `git clone https://github.com/DaveOdden/boilerplateNodeAPI` to pull this package down.
+
+**Usage**
+
+1. `cd` into "boilerplateNodeAPI"
+
+____
+
 **Steps taken to generate this boilerplate project**
 
 1. Create a new project folder locally.
