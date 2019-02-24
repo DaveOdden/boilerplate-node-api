@@ -6,7 +6,8 @@ This repository is intended to serve as a starter package for projects that requ
 
 Prerequisites:
 1. node installed
-2. access to terminal
+2. Mongo installed locally (use homebrew) and permissions
+3. access to terminal
 
 #
 
